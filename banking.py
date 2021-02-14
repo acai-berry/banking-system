@@ -28,7 +28,7 @@ class Bank:
             print('1. Balance \n 2. Add income \n 3. Do transfer \n 4. Close account \n 5. Log out \n 0.Exit')
             choice = input()
             if choice == '1':
-                balance = database.SHOW_BALANCE(self.connection, card_no)[0]
+                balance = database.show_balance(self.connection, card_no)[0]
                 print(f'Balance: {balance}')
             elif choice == '2':
                 income = int(input('Enter income:'))
