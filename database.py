@@ -25,7 +25,6 @@ def connect():
     return sqlite3.connect("card.s3db")
 
 def create_table(connection):
-    # cur = connection.cursor()
     # cur.execute("DROP TABLE card")
     with connection:
         connection.execute(CREATE_CARD_TABLE)
